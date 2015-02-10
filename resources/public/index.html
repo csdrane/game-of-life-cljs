@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- React is required to use om or sablono and is a 
+         really great match for ClojureScript and Figwheel -->
+    <script src="http://fb.me/react-0.12.2.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <div id="main-area">
+        <h2>Figwheel template</h2>
+        <p>Checkout your developer console.</p>
+      </div>
+      <canvas id="my-canvas" width="800" height="600">
+      </canvas>
+      <script src="js/compiled/out/goog/base.js" type="text/javascript"></script>
+      <script src="js/compiled/game_of_life_cljs.js" type="text/javascript"></script>
+      <script type="text/javascript">goog.require("game_of_life_cljs.core");</script>
+  </body>
+</html>
